@@ -1,0 +1,17 @@
+﻿//　変数宣言（xとかaとか。定数は１とか２とか）
+
+using System;
+
+namespace HelloWorld
+{
+   
+    class Program
+    {
+       
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
