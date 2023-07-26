@@ -162,6 +162,8 @@ World!!!!
             // ⑦演算子
             int x1 = 10;
             int y1 = 3;
+            // mは小数点の目印
+            decimal d = 1.5m;
             // + - / %はオペレーターと言われる。xとかyはオペランドという
             Console.WriteLine(x1 + y1);
             Console.WriteLine(x1 - y1);
@@ -169,9 +171,23 @@ World!!!!
             // 10/3して余った数字を出す今回なら１だよね
             Console.WriteLine(x1 % y1);
 
-            // 結合
+            // 結合する
             Console.WriteLine(x1+ " is answer");
             Console.WriteLine(x1 + y1 + " is answer");
+
+            //⑧浮動小数点(Floating point)型が異なるけど、結果は出せる。
+            Console.WriteLine(x1 + d);
+            Console.WriteLine(x1 - d);
+            Console.WriteLine(x1 * d);
+            //　小数点以下までしっかり表示する。
+            Console.WriteLine(x1 / d);
+
+            //型変換 整数→小数点へ変換
+            Console.WriteLine((decimal)x / (decimal)y);
+
+            double d2 = 2.5;
+            Console.WriteLine((float)d2);
+
         }
     }
 }
