@@ -188,6 +188,34 @@ World!!!!
             double d2 = 2.5;
             Console.WriteLine((float)d2);
 
+            //演算子＋α
+            int x2 = 10;
+            Console.WriteLine(x2);
+
+            // x2 = x2 + 10 logで出力したい時に使用する。解析とか
+            //　元々あった数値をいじりたくない時とかに使用できる
+            x2 += 10;
+            Console.WriteLine(x2);
+
+            x2 -= 10;
+            Console.WriteLine(x2);
+
+            x2 *= 10;
+            Console.WriteLine(x2);
+
+            x2 /= 10;
+            Console.WriteLine(x2);
+
+            // 足される前の結果が出てくる。X++：表示後に足す（ここよく出る）
+            Console.WriteLine(x2++);
+            Console.WriteLine(x2++);
+            Console.WriteLine(x2);
+
+            //++X：表示前に足す
+            Console.WriteLine(++x2);
+            Console.WriteLine(++x2);
+
+
         }
     }
 }
