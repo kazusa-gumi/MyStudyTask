@@ -159,7 +159,19 @@ World!!!!
             string URL = $@"c:\dir\{firstName}\data.txt";
             Console.WriteLine(URL);
 
+            // ⑦演算子
+            int x1 = 10;
+            int y1 = 3;
+            // + - / %はオペレーターと言われる。xとかyはオペランドという
+            Console.WriteLine(x1 + y1);
+            Console.WriteLine(x1 - y1);
+            Console.WriteLine(x1 / y1);
+            // 10/3して余った数字を出す今回なら１だよね
+            Console.WriteLine(x1 % y1);
 
+            // 結合
+            Console.WriteLine(x1+ " is answer");
+            Console.WriteLine(x1 + y1 + " is answer");
         }
     }
 }
