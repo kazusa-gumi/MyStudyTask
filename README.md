@@ -27,3 +27,5 @@
             Console.WriteLine(roll);
             roll = dice.Next(1, 7);
             Console.WriteLine(roll);
+
+2023/07/28 session2 
