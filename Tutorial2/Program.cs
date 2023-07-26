@@ -78,6 +78,11 @@ namespace HelloWorld
             Console.WriteLine(myBoolean1);
             Console.WriteLine(myString1);
 
+            // User Input
+            //Console.WriteLine("Enter your age");
+            //int age = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Your age is:" + age);
+
             // Commnet
 
             // My work
@@ -87,8 +92,8 @@ namespace HelloWorld
             Console.WriteLine("Hello World!");
 
 
-            // 定数 １とか２とか
-            // 変数　aとかxとか
+                // 定数 １とか２とか
+                // 変数　aとかxとか
 
                 // 文字列型
                 string newName; // 変数宣言, camelCaseで記載
@@ -124,12 +129,36 @@ namespace HelloWorld
                 bool is_ok = true;
                 Console.WriteLine(is_ok);
 
+            // ⑤エスケープ文字
+            Console.WriteLine("HelloWorld");
+            // Console.WriteLineは1行で表示する。
 
+            //　エスケープ文字
+            // /tは空白を表現する
+            Console.WriteLine("Hello \t world");
+            // /nは改行を表現する
+            Console.WriteLine("Hello \n world");
+            // option　+ ¥で バックスラッシュ打てます
+            Console.WriteLine("c: \\dire\repos");
+            // @はそのまま出力 @"~"何があってもそのまま出力される
+            Console.WriteLine(@"############
+Hello
+World!!!!
+########");
+            Console.WriteLine(@"\t\n\\");
 
-                // User Input
-                Console.WriteLine("Enter your age");
-                int age = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Your age is:" + age);
+            // ⑥ 文字列連結
+            string firstName = "Ai";
+            string message = "Good morning";
+
+            // +で結合可能になる。
+            Console.WriteLine(message + " " + firstName);
+            // "${}, {}"も可能
+            Console.WriteLine($"{ message} {firstName}");
+
+            string URL = $@"c:\dir\{firstName}\data.txt";
+            Console.WriteLine(URL);
+
 
         }
     }
