@@ -244,6 +244,37 @@ World!!!!
             roll = dice.Next(1, 7);
             Console.WriteLine(roll);
 
+            // Basic 3 of 9 operator
+
+            // ユーザーに値を入れさせるメソッド,Convert.ToInt32()はその文字列を整数(int)に変換する
+            // classActivity 1
+            Console.Write("Enter x:");
+            int x3 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter y:");
+            int y3 = Convert.ToInt32(Console.ReadLine());
+            int z = x3 + y3;
+            Console.WriteLine("z is " + z);
+
+            // classActivity 2
+            Console.Write("Please enter the temperature in Celsius: ");
+            string userInput = Console.ReadLine();
+
+            // Attempt to convert user input to a double (decimal number)
+            // doubole:小数点、TryParseは文字列を小数点の型に変換
+            if (double.TryParse(userInput, out double celsius))
+            {
+                // Conversion from Celsius to Fahrenheit
+                // celsius→Fahrenheitに変換するために以下の式で計算
+                double fahrenheit = (celsius * 9 / 5) + 32;
+                Console.WriteLine($"The temperature in Fahrenheit is: {fahrenheit}°F");
+            }
+            else
+            {
+                // If the conversion did not succeed (the user did not enter a valid number)
+                Console.WriteLine("Invalid input. Please enter a valid number next time.");
+            }
+
+
         }
     }
 }
