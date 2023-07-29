@@ -130,7 +130,7 @@ namespace HelloWorld
                 Console.WriteLine(is_ok);
 
             // ⑤エスケープ文字
-            Console.WriteLine("HelloWorld");
+            Console.WriteLine("HelloWorld, There");
             // Console.WriteLineは1行で表示する。
 
             //　エスケープ文字
