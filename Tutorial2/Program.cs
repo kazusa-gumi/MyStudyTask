@@ -15,7 +15,7 @@
 //{
 // C#はclass内で実行される
 //    class Program
-//    {
+//    {aaa
 // C#はmain関数で開始・終了する
 //        static void Main(string[] args)
 //        {
